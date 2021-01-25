@@ -81,8 +81,19 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(inningCb, innings){
+  let Home = 0
+  let Away = 0
+
+  for (let i = 0; i < innings; i++) {
+    Home += inningCb()
+    Away += inningCb()
+  }
+
+  return {
+    Home,
+    Away
+  }
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
