@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+   Closure is a tool used to encapsulate access to parent scope. It enables us to write reusable code.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +65,12 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  Closure is used in the anonymous function that's returnd from personal dice. You can tell because the function acceses the name variable which is defined by it's parent's name parameter
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  Each time the function is called the first part of the string including Dan's name will always be the same. In contrast, the last part indicating the roll will change since it's being randomly generated each time.
+c. What is the lexical scope of `newRoll`? 
+  New roll's lexical scope is the anonymous function in which it's defined.
 
 ### Task 3 - Stretch Goals
 
